@@ -21,5 +21,15 @@ public class Ejecutor {
                 fac.obtenerMinutosMes(),
                 fac.obtenerValorMinuto(),
                 fac.obtenerValorFactura());
+        
+        fac.establecerMinutosMes(40);
+        fac.calcularValorFactura();
+        System.out.println(".........................................");
+        System.out.printf("Número telefónico: %s\n"
+                + "Minutos mes: %.2f\nValor minuto: %.2f\n"
+                + "Valor factura: %.2f\n", fac.obtenerNumeroTelefono(),
+                fac.obtenerMinutosMes(),
+                fac.obtenerValorMinuto(),
+                fac.obtenerValorFactura());
     }
 }
